@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latecomers Record</title>
+    <style>
+        /* CSS styling goes here */
+    </style>
+</head>
+<body>
+    <h1>Latecomers Record</h1>
+    <form action="record_latecomers.php" method="post">
+        <label for="student_name">Student Name:</label>
+        <input type="text" id="student_name" name="student_name"><br><br>
+        
+        <label for="class">Class:</label>
+        <input type="text" id="class" name="class"><br><br>
+        
+        <label for="late_reason">Reason for Being Late:</label><br>
+        <textarea id="late_reason" name="late_reason" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="late_time">Time of Arrival:</label>
+        <input type="time" id="late_time" name="late_time"><br><br>
+        
+        <input type="submit" value="Record Latecomer">
+    </form>
+</body>
+</html>
