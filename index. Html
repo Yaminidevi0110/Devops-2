@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <style>
+        /* CSS styling goes here */
+    </style>
+</head>
+<body>
+    <h1>Attendance Management System</h1>
+    <form action="submit_attendance.php" method="post">
+        <label for="student_id">Student ID:</label>
+        <input type="text" id="student_id" name="student_id"><br><br>
+        
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br><br>
+        
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+            <option value="Late">Late</option>
+        </select><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
